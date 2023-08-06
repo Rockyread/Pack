@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <title>FORM</title>
+  </head>
+  <body>
+    <header>
+      <h1 id="blink">Student Registration Form</h1>
+    </header>
+    <main>
+      <form action="" method="GET">
+        <section>
+          <h2>The Form</h2>
+
+          <ul>
+            <li>
+              <label for="firstusername">Your First Name</label>
+              <input type="text" id="firstusername" name="firstusername" required />
+            </li>
+            <li>
+              <label for="lastusername">Your Last Name</label>
+              <input type="text" id="lastusername" name="lastusername" required />
+            </li>
+            <li>
+              <label for="pass">Password</label>
+              <input type="password" id="pass" name="pass" required />
+            </li>
+            <li>
+              <label for="email">Your Email</label>
+              <input type="email" id="email" name="email" required />
+            </li>
+            <li>
+              <label for="phone">Mobile Number</label>
+              <input type="tel" id="phone" name="phone" required />
+            </li>
+            <li>
+              <label for="message">Your Message</label>
+              <textarea
+                id="message"
+                name="message"
+                required
+                minlength="6"
+                maxlength="100"
+                rows="4"
+              ></textarea>
+            </li>
+          </ul>
+        </section>
+
+        <section>
+          <label for="count">Country</label>
+          <select name="count" id="count" required>
+            <option value="india">India</option>
+            <option value="tokyo" selected>Tokyo</option>
+            <option value="usa">USA</option>
+            <option value="germany">Germany</option>
+          </select>
+        </section>
+
+        <section>
+          <label for="find">How did you find us ?</label>
+          <select name="find" id="find" required>
+            <option value="search">Web Search</option>
+            <option value="friend" selected>Your Friend</option>
+            <option value="company">Company</option>
+            <option value="other">Other</option>
+          </select>
+        </section>
+
+        <section>
+          <label>How should we reply ?</label>
+          <ul >
+            <li class="inline-control">
+              <input
+                type="radio"
+                name="reply"
+                id="reply-phone"
+                value="phone"
+                required
+              />
+              <label for="reply-phone">Call me</label>
+            </li>
+            <li class="inline-control">
+              <input
+                type="radio"
+                name="reply"
+                id="reply-email"
+                value="email"
+                required
+              />
+              <label for="reply-email">Email me</label>
+            </li>
+            <li class="inline-control">
+              <input
+                type="radio"
+                name="reply"
+                id="reply-not"
+                value="not"
+                required
+              />
+              <label for="reply-not">Don't Reply</label>
+            </li>
+          </ul>
+        </section>
+
+        <section class="inline-control">
+          <input type="checkbox" id="accept" name="accept" required />
+          <label for="accept">Accept Terms</label>
+        </section>
+
+        <section style="text-align:right">
+    
+          <button type="reset" class="btn-empty">Clear</button>
+
+          <button type="submit" class="btn-filled">Submit</button>
+        </section>
+      </form>
+    </main>
+  </body>
+</html>
