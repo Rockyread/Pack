@@ -102,6 +102,7 @@ button {
   animation: blinker 2s infinite linear;
 }
 
+
 @keyframes blinker {
   50% {
     opacity: 0;
