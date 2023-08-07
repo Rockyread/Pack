@@ -3,6 +3,7 @@ body {
   background-color: rgb(108 217 227);
 }
 
+
 h1 {
   text-align: center;
   margin: 2rem;
@@ -108,3 +109,4 @@ button {
     opacity: 0;
   }
 }
+/* able to merge */
